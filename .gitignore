@@ -1,0 +1,5 @@
+nvim/autoload
+nvim/plugged
+
+*.swp
+.DS_Store
