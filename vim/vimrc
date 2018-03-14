@@ -1,0 +1,34 @@
+filetype plugin indent on
+syntax enable
+
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+
+set autoread
+set backspace=indent,eol,start
+set backupdir=~/.vim/tmp/
+set breakindent
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+set directory=~/.vim/tmp/
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set list
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set ruler
+set scrolloff=1
+set showbreak=››
+set showcmd
+set smartcase
+set undodir=~/.vim/tmp/
+set viminfo+=n~/.vim/.viminfo
+set wildignorecase
+set wildmenu
+
+noremap Q <nop>
+noremap <F1> <Esc>
