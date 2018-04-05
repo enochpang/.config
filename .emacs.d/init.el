@@ -17,7 +17,7 @@
 
 (require-package 'diminish)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(require 'plain-theme)
+;; (require 'plain-theme)
 (require 'init-org)
 (require 'init-markup)
 
@@ -71,6 +71,9 @@
 (when (memq window-system '(mac ns))
   (require-package 'exec-path-from-shell)
   (exec-path-from-shell-initialize))
+
+(require-package 'grayscale-theme)
+(load-theme 'grayscale t)
 
 (require-package 'evil)
 (evil-mode t)
