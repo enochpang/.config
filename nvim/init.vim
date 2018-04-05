@@ -1,10 +1,11 @@
 call plug#begin()
-Plug 'junegunn/vim-easy-align'
+" Plug 'fatih/vim-go'
 Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-slash'
+Plug 'lervag/vimtex'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'lervag/vimtex'
 call plug#end()
 
 set expandtab
@@ -20,7 +21,7 @@ set smartcase
 
 set breakindent
 set breakindentopt=sbr
-set list
+" set list
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set showbreak=››
 

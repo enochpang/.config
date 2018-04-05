@@ -13,7 +13,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (if (eq system-type 'windows-nt)
     (add-to-list 'default-frame-alist '(font . "Consolas-11"))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro-10")))
+  (add-to-list 'default-frame-alist '(font . "Source Code Pro-11")))
 
 (require-package 'diminish)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
