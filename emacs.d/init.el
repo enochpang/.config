@@ -40,7 +40,8 @@
 (setq use-file-dialog nil)
 (setq use-dialog-box nil)
 (setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-(setq visible-bell 1)
+;; (setq visible-bell 1)
+(setq ring-bell-function 'ignore)
 
 (setq-default truncate-lines t)
 (setq-default fill-column 80)
@@ -67,6 +68,12 @@
 
 (global-set-key (kbd "<f12>") 'toggle-truncate-lines)
 (global-set-key (kbd "M-/") 'hippie-expand)
+
+;; (require 'uniquify)
+;; (setq uniquify-buffer-name-style 'forward)
+
+;; (require 'saveplace)
+;; (setq-default save-place t)
 
 (when (memq window-system '(mac ns))
   (require-package 'exec-path-from-shell)
