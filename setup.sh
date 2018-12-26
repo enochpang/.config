@@ -4,8 +4,8 @@
 # ln -s ~/.config/emacs.d ~/.emacs.d
 
 ## Vim
-ln -s ~/.config/vim ~/.vim
-mkdir -p vim/tmp
+#ln -s ~/.config/vim ~/.vim
+#mkdir -p vim/tmp
 
 ## Neovim
 mkdir -p nvim/autoload
