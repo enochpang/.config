@@ -1,20 +1,8 @@
-call plug#begin()
-" Plug 'fatih/vim-go'
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/vim-slash'
-Plug 'tpope/vim-commentary'
-Plug 'lervag/vimtex'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'sheerun/vim-polyglot'
-call plug#end()
-
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-colorscheme seoul256
 set clipboard+=unnamed
 set clipboard+=unnamedplus
 set ignorecase
@@ -23,7 +11,7 @@ set smartcase
 
 set breakindent
 set breakindentopt=sbr
-" set list
+"set list
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set showbreak=››
 
