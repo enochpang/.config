@@ -1,8 +1,10 @@
 nvim/spell/
 gocode/
+
 configStore/
 qBittorrent/
 valet/
+/scoop
 
 *.swp
 .DS_Store
