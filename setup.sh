@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## Emacs
-# ln -s ~/.config/emacs.d ~/.emacs.d
+#ln -s ~/.config/emacs.d ~/.emacs.d
 
 ## Vim
 #ln -s ~/.config/vim ~/.vim
