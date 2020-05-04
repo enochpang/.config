@@ -9,17 +9,18 @@
     (package-refresh-contents)
     (package-install package)))
 
+(require-package 'benchmark-init)
+(benchmark-init/activate)
+(require-package 'diminish)
+
 (prefer-coding-system 'utf-8)
 (fset 'yes-or-no-p 'y-or-n-p)
 (if (eq system-type 'windows-nt)
     (add-to-list 'default-frame-alist '(font . "Consolas-11"))
   (add-to-list 'default-frame-alist '(font . "Source Code Pro-11")))
 
-(require-package 'diminish)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-;; (require 'plain-theme)
-(require 'init-org)
-(require 'init-markup)
+(require 'init-latex)
 
 (column-number-mode t)
 (transient-mark-mode t)
@@ -79,13 +80,15 @@
   (require-package 'exec-path-from-shell)
   (exec-path-from-shell-initialize))
 
-(require-package 'grayscale-theme)
-(load-theme 'grayscale t)
+;; (require-package 'grayscale-theme)
+;; (load-theme 'grayscale t)
+(require-package 'nord-theme)
+(load-theme 'nord t)
 
-(require-package 'evil)
-(evil-mode t)
-(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
-(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+;; (require-package 'evil)
+;; (evil-mode t)
+;; (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+;; (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
 
 (require-package 'company)
 (global-company-mode t)
@@ -102,6 +105,13 @@
 (global-set-key (kbd "M-g w") 'avy-goto-word-1)
 (global-set-key (kbd "M-g c") 'avy-goto-char)
 (setq avy-background t)
+
+(require-package 'which-key)
+(which-key-mode t)
+(diminish 'which-key-mode)
+
+(require-package 'markdown-mode)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (with-eval-after-load "undo-tree" (diminish 'undo-tree-mode))
 (with-eval-after-load "hideshow" (diminish 'hs-minor-mode))
