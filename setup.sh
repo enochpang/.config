@@ -8,5 +8,5 @@
 #mkdir -p vim/tmp
 
 ## Neovim
-mkdir -p nvim/autoload
-curl -o nvim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#mkdir -p nvim/autoload
+#curl -o nvim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

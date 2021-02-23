@@ -1,9 +1,5 @@
-gocode/
-
-configStore/
-qBittorrent/
 valet/
-/scoop
+.mono
 
 *.swp
 .DS_Store
