@@ -2,10 +2,6 @@ auto-save-list/
 elpa/
 saves/
 undo/
-server/
-.python-environments/
-anaconda-mode/
+var/
 
 custom.el
-abbrev_defs
-session.*
